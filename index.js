@@ -10,7 +10,7 @@ app.use(cors())
 
 app.use(express.static('build'))
 
-app.use(express.json())
+//app.use(express.json())
 
   
 app.post('/api/notes', (request, response) => {
