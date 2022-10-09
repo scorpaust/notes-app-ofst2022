@@ -91,8 +91,6 @@ const generateId = () => {
     response.status(204).end()
   })
   
-  const PORT = process.env.PORT 
-  
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`)
+  app.listen(process.env.PORT, () => {
+    console.log(`Server running on port ${process.env.PORT}`)
   })
