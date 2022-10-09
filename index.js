@@ -5,7 +5,6 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const Note = require('./models/note')
 
-
 app.use(cors())
 
 app.use(express.static('build'))
