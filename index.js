@@ -5,19 +5,6 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const Note = require('./models/note')
 
-const password = encodeURIComponent(process.env.REACT_APP_MONGODB_PASS)
-
-console.log("pass: ", password)
-
-// DO NOT SAVE YOUR PASSWORD TO GITHUB!!
-
-mongoose.connect(process.env.MONGODB_URI)
-  .then(result => {
-    console.log('connected to MongoDB')
-  })
-  .catch((error) => {
-    console.log('error connecting to MongoDB:', error.message)
-  })
 
 app.use(cors())
 
