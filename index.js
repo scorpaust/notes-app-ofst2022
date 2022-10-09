@@ -10,7 +10,7 @@ app.use(cors())
 
 app.use(express.static('build'))
 
-//app.use(express.json())
+app.use(express.json())
 
   
 app.post('/api/notes', (request, response) => {
@@ -44,12 +44,12 @@ app.get('/api/notes/:id', (request, response) => {
   })
 })
 
-  app.delete('/api/notes/:id', (request, response) => {
+/*   app.delete('/api/notes/:id', (request, response) => {
     const id = Number(request.params.id)
     notes = notes.filter(note => note.id !== id)
   
     response.status(204).end()
-  })
+  }) */
 
   const PORT = process.env.PORT
   
